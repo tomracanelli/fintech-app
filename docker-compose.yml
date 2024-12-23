@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+    command: npm run dev
+
+  backend:
+    build:
+      context: ./fintech-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./fintech-backend:/app
+    command: node app.js

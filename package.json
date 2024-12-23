@@ -1,0 +1,50 @@
+{
+  "name": "fintech-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "backend": "node ./fintech-backend/app.js",
+    "build": "next build",
+    "start": "concurrently \"npm run dev\" \"npm run backend\"",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "axios": "^1.7.9",
+    "bitcoin-core": "^4.2.0",
+    "body-parser": "^1.19.0",
+    "bootstrap-icons": "^1.11.3",
+    "braintree": "^2.16.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "express-validator": "^5.3.1",
+    "formidable": "^1.2.1",
+    "framer-motion": "^10.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "moment": "^2.29.1",
+    "mongoose": "^5.5.5",
+    "morgan": "^1.9.1",
+    "next": "14.0.4",
+    "nodemon": "^1.19.0",
+    "preline": "^2.0.3",
+    "prettyjson": "^1.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "request": "^2.88.2",
+    "room-populate": "^1.0.17",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "concurrently": "^9.1.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
+  }
+}
